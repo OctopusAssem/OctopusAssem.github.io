@@ -1,150 +1,271 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OctopusAssem — عاصم حسين | مطوّر تطبيقات أندرويد وكيرنل</title>
-<meta name="description" content="OctopusAssem (عاصم حسين) — مطوّر تطبيقات أندرويد وكيرنل. الموقع الرسمي: مشاريع MECHANICUS و RootScope وكيرنل ReSukiSU/SUSFS لهاتف Redmi Note 10S.">
-<meta name="keywords" content="OctopusAssem, عاصم حسين, Assem Hussein, Android developer, MECHANICUS, RootScope, KernelSU, ReSukiSU, SUSFS, rosemary kernel">
-<meta name="author" content="OctopusAssem (عاصم حسين)">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://octopusassem.github.io/">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="OctopusAssem — عاصم حسين">
-<meta property="og:description" content="مطوّر تطبيقات أندرويد وكيرنل. مشاريع MECHANICUS و RootScope وكيرنل ReSukiSU.">
-<meta property="og:url" content="https://octopusassem.github.io/">
-<meta property="og:site_name" content="OctopusAssem">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OctopusAssem — عاصم حسين">
-<meta name="twitter:description" content="مطوّر تطبيقات أندرويد وكيرنل.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐙</text></svg>">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "OctopusAssem",
-  "alternateName": ["عاصم حسين", "Assem Hussein"],
-  "url": "https://octopusassem.github.io/",
-  "jobTitle": "Android & Kernel Developer",
-  "description": "OctopusAssem (عاصم حسين) — مطوّر تطبيقات أندرويد وكيرنل.",
-  "sameAs": [
-    "https://github.com/OctopusAssem",
-    "https://github.com/OctopusAssem/MECHANICUS",
-    "https://github.com/OctopusAssem/capability-detector",
-    "https://www.youtube.com/@Assem_Hussein",
-    "https://www.tiktok.com/@assem_hussein",
-    "https://www.instagram.com/assem.hussein/",
-    "https://www.facebook.com/cars.fix.and.repair/"
-  ]
-}
-</script>
-<style>
-  :root{--red:#e11d2a;--red2:#b31220;--ink:#0f0f12;--mut:#6b7280;--bg:#0b0406;}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:"Segoe UI",Tahoma,system-ui,sans-serif;color:#f5f5f5;
-    background:radial-gradient(1000px 600px at 50% -8%,#3a0d14 0%,#160609 55%,#0a0406 100%);min-height:100vh;line-height:1.8}
-  .wrap{max-width:1000px;margin:0 auto;padding:28px 18px 60px}
-  header{text-align:center;padding:34px 0 10px}
-  .logo{font-size:64px}
-  h1{font-size:clamp(34px,7vw,58px);font-weight:900;letter-spacing:1px;margin-top:6px}
-  .ar{font-size:clamp(18px,3.4vw,26px);color:#ffb3b9;font-weight:800;margin-top:6px}
-  .tag{color:#ff9aa2;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:10px}
-  .lead{max-width:640px;margin:18px auto 0;color:#e6dadd;font-size:16px}
-  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
-  a.btn{padding:12px 22px;border-radius:14px;font-weight:800;text-decoration:none;font-size:15px}
-  .primary{background:var(--red);color:#fff}
-  .ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.18)}
-  h2{font-size:22px;font-weight:900;color:#ffb3b9;margin:40px 0 14px;text-align:center}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-  .card{background:linear-gradient(160deg,#1c0a0f,#140609);border:1px solid #3a141c;border-radius:18px;padding:18px;box-shadow:0 14px 34px rgba(0,0,0,.5);text-decoration:none;color:inherit;display:block}
-  .card h3{font-size:17px;font-weight:900;color:#fff;margin-bottom:6px}
-  .card p{color:#cfc4c7;font-size:14px}
-  .card .lang{display:inline-block;font-size:11px;font-weight:800;color:#ff9aa2;border:1px solid #4a1a22;border-radius:999px;padding:1px 10px;margin-top:10px}
-  footer{text-align:center;color:#7c7376;font-size:12.5px;margin-top:44px}
-  footer a{color:#ff9aa2}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ======================================================== -->
+    <!-- أكواد أرشفة جوجل المخصصة لعاصم حسين (SEO) -->
+    <!-- ======================================================== -->
+    <title>عاصم حسين | OctopusAssem - الأخطبوط الراقص</title>
+    <meta name="description" content="الموقع الشخصي للمطور عاصم حسين (OctopusAssem) - الأخطبوط الراقص. مطور كيرنل وتطبيقات أندرويد ومتخصص في عمرات الموتور وميكانيكا السيارات بالقاهرة.">
+    <meta name="keywords" content="عاصم حسين, OctopusAssem, الأخطبوط الراقص, عمرات موتور, ميكانيكا سيارات, Cars Fix and Repair, مطور أندرويد, Kernel Developer, KernelSU, Sonar, MECHANICUS">
+    <meta name="author" content="عاصم حسين (OctopusAssem)">
+
+    <!-- روابط السوشيال ميديا الموثقة لجوجل لقراءة الشبكة بالكامل -->
+    <link rel="me" href="https://youtube.com">
+    <link rel="me" href="https://tiktok.com">
+    <link rel="me" href="https://instagram.com">
+    <link rel="me" href="https://facebook.com">
+    <!-- ======================================================== -->
+
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .avatar {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .bio {
+            margin-top: 1.5rem;
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(88, 166, 255, 0.1);
+            color: var(--accent-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .links-list {
+            list-style: none;
+        }
+
+        .links-list li {
+            margin-bottom: 1rem;
+        }
+
+        .links-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        .links-list span {
+            color: var(--text-muted);
+            display: block;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo" aria-hidden="true">🐙</div>
-    <h1>OctopusAssem</h1>
-    <div class="ar">عاصم حسين</div>
-    <div class="tag">ANDROID &amp; KERNEL DEVELOPER</div>
-    <p class="lead">أنا <strong>OctopusAssem</strong> (عاصم حسين) — مطوّر أندرويد وكيرنل. ببني تطبيقات عملية بالعربي وبطوّر كيرنلات مخصّصة لأجهزة أندرويد. كل مشاريعي مفتوحة المصدر على جيت هاب.</p>
-    <div class="btns">
-      <a class="btn primary" href="https://github.com/OctopusAssem">GitHub Profile</a>
-      <a class="btn ghost" href="#projects">المشاريع</a>
+
+    <div class="container">
+        <header>
+            <div class="avatar">🐙</div>
+            <h1>عاصم حسين (OctopusAssem)</h1>
+            <div class="subtitle">Android & Linux Kernel Developer & ميكانيكي سيارات</div>
+            <p class="bio">
+                أنا **عاصم حسين** (الأخطبوط الراقص) — مطوّر أندرويد وكيرنل. أقوم ببناء تطبيقات عملية باللغتين العربية والإنجليزية، وأطوّر كيرنلات مخصّصة لأجهزة أندرويد، بالإضافة إلى شغفي وخبرتي الطويلة في **ميكانيكا السيارات وعمرات الموتور**. جميع مشاريعي التقنية مفتوحة المصدر.
+            </p>
+        </header>
+
+        <section id="projects">
+            <h2>المشاريع المتميزة</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>MECHANICUS</h3>
+                    <p>تطبيق إدارة مراكز خدمة وصيانة السيارات: متابعة تتبع السيارات، العملاء، الدفعات، صور اللوحات، وعمرات الموتور مع مزامنة سحابية مدمجة (يعمل بالكامل بدون إنترنت).</p>
+                    <div class="tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Android</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>rosemary SUSFS Kernel</h3>
+                    <p>كيرنل مخصّص لجهاز Redmi Note 10S (rosemary) يدعم تقنيات KernelSU/ReSukiSU مع دمج نظام SUSFS لإخفاء تراخيص الجذور (Root) بالكامل عن التطبيقات البنكية.</p>
+                    <div class="tags">
+                        <span class="tag">Kernel</span>
+                        <span class="tag">Shell / C</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Capability Detector</h3>
+                    <p>تطبيق أندرويد برمي مخصص لفحص قدرات وإمكانيات الجذور والكشف عن مستوى الحماية وتخطي أنظمة الحماية على أجهزة أندرويد المختلفة.</p>
+                    <div class="tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Sonar</h3>
+                    <p>مشروع وتطبيق أندرويد مفتوح المصدر بالكامل يهدف لفحص وتحليل تفاصيل حزم التطبيقات المثبتة على الهاتف بدقة.</p>
+                    <div class="tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Kotlin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="follow">
+            <h2>تابعني وتواصل معي</h2>
+            <ul class="links-list">
+                <li>
+                    <a href="https://youtube.com" target="_blank">▶ YouTube - Assem Hussein</a>
+                    <span>كل الشروحات والتوثيقات الحية اللي تهمك عن عربيتك: عمرات موتور وصيانات ميكانيكية شاملة.</span>
+                </li>
+                <li>
+                    <a href="https://tiktok.com" target="_blank">🎵 TikTok - الأخطبوط الراقص</a>
+                    <span>فيديوهات ومقاطع قصيرة حية وسريعة مباشرة من داخل الورشة.</span>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+                    <span>يوميات، صور كواليس، وتوثيق مراحل شغل العمرات والصيانة أول بأول.</span>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">📘 Facebook - عمرات موتور (القاهرة)</a>
+                    <span>الصفحة الرسمية للورشة لتشخيص وصيانة محركات السيارات بالقاهرة.</span>
+                </li>
+                <li>
+                    <a href="https://github.com" target="_blank">💻 GitHub Profile</a>
+                    <span>المستودع الرسمي لكافة البرمجيات، المشاريع، والمصادر المفتوحة.</span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© عاصم حسين (الأخطبوط الراقص). جميع الحقوق محفوظة 2026.</p>
+        </footer>
     </div>
-  </header>
 
-  <h2 id="projects">المشاريع</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/OctopusAssem/MECHANICUS">
-      <h3>MECHANICUS</h3>
-      <p>تطبيق إدارة مركز خدمة سيارات: عربيات، عملاء، دفعات، صور لوحات، ومزامنة سحابية — يعمل بدون إنترنت.</p>
-      <span class="lang">Kotlin · Android</span>
-    </a>
-    <a class="card" href="https://rootscope.pages.bu.app/">
-      <h3>RootScope</h3>
-      <p>أداة عرض قدرات الجذر وكشف صلاحيات KernelSU / ReSukiSU على أجهزة أندرويد.</p>
-      <span class="lang">Web · Root</span>
-    </a>
-    <a class="card" href="https://github.com/OctopusAssem/rosemary-susfs-kernel">
-      <h3>rosemary SUSFS Kernel</h3>
-      <p>كيرنل مخصّص لـ Redmi Note 10S (rosemary): KernelSU/ReSukiSU + SUSFS مع إخفاء صلاحيات الجذر.</p>
-      <span class="lang">Kernel · Shell</span>
-    </a>
-    <a class="card" href="https://github.com/OctopusAssem/capability-detector">
-      <h3>Capability Detector</h3>
-      <p>تطبيق أندرويد لفحص قدرات الجذر والكشف عن الحماية (RootScope).</p>
-      <span class="lang">Android</span>
-    </a>
-    <a class="card" href="https://github.com/OctopusAssem/Sonar">
-      <h3>Sonar</h3>
-      <p>مشروع أندرويد مفتوح المصدر.</p>
-      <span class="lang">Android</span>
-    </a>
-    <a class="card" href="https://github.com/OctopusAssem/NonGKI_Kernel_Build_2nd">
-      <h3>NonGKI Kernel Build</h3>
-      <p>بناء كيرنلات Non-GKI تلقائيًا عبر GitHub Actions.</p>
-      <span class="lang">CI · Kernel</span>
-    </a>
-  </div>
-
-  <h2>تابعني</h2>
-  <div class="grid">
-    <a class="card" href="https://www.youtube.com/@Assem_Hussein">
-      <h3>▶️ YouTube</h3>
-      <p>Assem Hussein — كل الشروحات اللي تهمك عن عربيتك: عمرات موتور وصيانات دورية.</p>
-      <span class="lang">@Assem_Hussein</span>
-    </a>
-    <a class="card" href="https://www.tiktok.com/@assem_hussein">
-      <h3>🎵 TikTok</h3>
-      <p>فيديوهات قصيرة من الورشة.</p>
-      <span class="lang">@assem_hussein</span>
-    </a>
-    <a class="card" href="https://www.instagram.com/assem.hussein/">
-      <h3>📸 Instagram</h3>
-      <p>عاصم حسين — صور وشغل الورشة.</p>
-      <span class="lang">@assem.hussein</span>
-    </a>
-    <a class="card" href="https://www.facebook.com/cars.fix.and.repair/">
-      <h3>📘 Facebook</h3>
-      <p>عمرات موتور (القاهرة) — صفحة الورشة.</p>
-      <span class="lang">cars.fix.and.repair</span>
-    </a>
-    <a class="card" href="https://github.com/OctopusAssem">
-      <h3>💻 GitHub</h3>
-      <p>كل المشاريع والمصدر المفتوح.</p>
-      <span class="lang">@OctopusAssem</span>
-    </a>
-  </div>
-
-  <footer>
-    © <span id="y"></span> OctopusAssem — عاصم حسين. كل الحقوق محفوظة.
-  </footer>
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
