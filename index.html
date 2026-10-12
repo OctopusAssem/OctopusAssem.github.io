@@ -21,23 +21,20 @@
     <style>
         body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.8; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #24292e; background-color: #ffffff; }
         h1, h2, h3 { color: #1b1f23; font-weight: 600; }
-        h1 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; font-size: 2em; margin-top: 24px; margin-bottom: 16px; }
-        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-top: 24px; margin-bottom: 16px; }
-        h3 { font-size: 1.25em; margin-top: 24px; margin-bottom: 16px; }
+        h1 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; font-size: 25px; margin-top: 24px; margin-bottom: 16px; }
+        h2 { font-size: 20px; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-top: 24px; margin-bottom: 16px; }
         p { margin-top: 0; margin-bottom: 16px; }
         
-        /* تنسيق الجدول ليطابق جيت هاب تماماً */
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; margin-bottom: 24px; display: block; overflow-x: auto; }
+        /* تنسيق جدول المشاريع ليطابق ستايل جيت هاب */
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; margin-bottom: 24px; display: table; }
         th, td { padding: 12px 15px; border: 1px solid #dfe2e5; text-align: right; }
         th { background-color: #f6f8fa; font-weight: 600; }
         tr:nth-child(even) { background-color: #f6f8fa; }
         
         ul { padding-right: 20px; margin-top: 0; margin-bottom: 16px; list-style-type: disc; }
         li { margin-bottom: 8px; }
-        a { color: #0366d6; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .emoji-center { font-size: 2em; text-align: center; margin-bottom: 10px; }
-        .project-title { font-weight: bold; color: #0366d6; display: flex; align-items: center; gap: 6px; }
+        strong { color: #111; }
+        .emoji-center { font-size: 32px; text-align: center; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -49,7 +46,7 @@
     
     <p>أنا <strong>عاصم حسين</strong> (الأخطبوط الراقص) — مطوّر أندرويد وكيرنل. أقوم ببناء تطبيقات عملية باللغتين العربية والإنجليزية، وأطوّر كيرنلات مخصّصة لأجهزة أندرويد، بالإضافة إلى شغفي وخبرتي الطويلة في <strong>ميكانيكا السيارات وعمرات الموتور</strong>. جميع مشاريعي التقنية مفتوحة المصدر.</p>
 
-    <h2>⚙️ مشاريعي البرمجية وتطبيقاتي (My Projects)</h2>
+    <h2>⚙ مشاريعي البرمجية وتطبيقاتي (My Projects)</h2>
 
     <table>
         <thead>
@@ -61,29 +58,29 @@
         </thead>
         <tbody>
             <tr>
-                <td class="project-title">🔧 MECHANICUS</td>
+                <td><strong>🔧 MECHANICUS</strong></td>
                 <td>تطبيق أندرويد (أوفلاين) مخصص لإدارة مراكز صيانة السيارات، تتبع عمرات الموتور، والمزامنة مع Google Drive.</td>
-                <td>Kotlin</td>
+                <td><strong>Kotlin</strong></td>
             </tr>
             <tr>
-                <td class="project-title">📱 rosemary-susfs-kernel</td>
+                <td><strong>📱 rosemary-susfs-kernel</strong></td>
                 <td>كيرنل مخصص لـ Redmi Note 10S يدعم KernelSU و SUSFS لإخفاء الروت تماماً.</td>
-                <td>Shell / C</td>
+                <td><strong>Shell / C</strong></td>
             </tr>
             <tr>
-                <td class="project-title">🔍 Sonar</td>
+                <td><strong>🔍 Sonar</strong></td>
                 <td>تطبيق مفتوح المصدر لفحص وتفصيل حزم تطبيقات الأندرويد المثبتة على الهاتف.</td>
-                <td>Kotlin</td>
+                <td><strong>Kotlin</strong></td>
             </tr>
             <tr>
-                <td class="project-title">🛡️ capability-detector</td>
+                <td><strong>🛡 capability-detector</strong></td>
                 <td>تطبيق لفحص صلاحيات الجذور والقدرات التي يبلغ عنها كيرنل KernelSU.</td>
-                <td>Java</td>
+                <td><strong>Java</strong></td>
             </tr>
         </tbody>
     </table>
 
-    <h2>🏎️ مجالات الخبرة والاهتمامات (Skills)</h2>
+    <h2>🏎 مجالات الخبرة والاهتمامات (Skills)</h2>
     <ul>
         <li>تطوير تطبيقات أندرويد وبناء نواة لينكس (Kernel Developer).</li>
         <li>صيانة وتطوير ميكانيكا السيارات وتعمير المحركات بجميع أنواعها.</li>
