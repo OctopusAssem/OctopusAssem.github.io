@@ -2,6 +2,12 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-843TQH9EKL"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-843TQH9EKL');gtag('config','AW-863320414');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>الوكالة الهندسية لصيانة وإصلاح السيارات | عمرة موتور بالعبور</title>
 <meta name="description" content="ورشة الوكالة الهندسية لصيانة وإصلاح السيارات بمدينة العبور. متخصصون في عمرات الموتور وإصلاح أكل الزيت وصيانة هيونداي وكيا وتويوتا. كلمنا واتساب 01275480866.">
@@ -154,5 +160,15 @@
   <a class="fl-wa" href="https://wa.me/201275480866" target="_blank" rel="noopener" title="واتساب">💬</a>
   <a class="fl-call" href="tel:01275480866" title="اتصال">📞</a>
 </div>
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('a'):null;if(!a)return;
+  var h=a.getAttribute('href')||'';
+  try{
+    if(h.indexOf('wa.me')>-1){gtag('event','whatsapp_click',{link_url:h});}
+    else if(h.indexOf('tel:')===0){gtag('event','call_click',{link_url:h});}
+  }catch(_){}
+},true);
+</script>
 </body>
 </html>

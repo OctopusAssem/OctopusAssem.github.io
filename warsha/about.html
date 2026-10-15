@@ -2,6 +2,12 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-843TQH9EKL"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-843TQH9EKL');gtag('config','AW-863320414');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>من نحن | الوكالة الهندسية لصيانة وإصلاح السيارات</title>
 <meta name="description" content="الوكالة الهندسية لصيانة وإصلاح السيارات بمدينة العبور: خبرة طويلة في عمرات الموتور والميكانيكا لكل الموديلات، مع ضمان على الشغل وقطع غيار أصلية.">
@@ -71,5 +77,15 @@
   <div>الوكالة الهندسية لصيانة وإصلاح السيارات — مدينة العبور، القاهرة.</div>
   <div style="margin-top:6px"><a href="./">الرئيسية</a> · <a href="services.html">خدماتنا</a> · <a href="location.html">العنوان</a> · <a href="contact.html">تواصل معنا</a></div>
 </div></footer>
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('a'):null;if(!a)return;
+  var h=a.getAttribute('href')||'';
+  try{
+    if(h.indexOf('wa.me')>-1){gtag('event','whatsapp_click',{link_url:h});}
+    else if(h.indexOf('tel:')===0){gtag('event','call_click',{link_url:h});}
+  }catch(_){}
+},true);
+</script>
 </body>
 </html>
